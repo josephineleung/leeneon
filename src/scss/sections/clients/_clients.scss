@@ -49,10 +49,10 @@ $testimonials-img-height: 105px;
 .clients-testimonials__avatar {
     width: pxToRem($testimonials-img-height);
     height: pxToRem($testimonials-img-height);
-    border-radius: pxToRem($testimonials-img-height / 2);
+    border-radius: pxToRem($testimonials-img-height * 0.5);
     padding: pxToRem(15px);
     position: absolute;
-    top: -#{pxToRem($testimonials-img-height / 2)};
+    top: -#{pxToRem($testimonials-img-height * 0.5)};
     #{$end-direction}: 50%;
     transform: translateX(50% * $transform-direction);
     box-shadow: $transform-direction * 5px $transform-direction * 5px 10px 0px rgba(0, 0, 0, 0.2);
@@ -65,7 +65,7 @@ $testimonials-img-height: 105px;
 
 .clients-testimonials__content {
     position: relative;
-    margin-top: pxToRem($testimonials-img-height / 2);
+    margin-top: pxToRem($testimonials-img-height * 0.5);
     padding-top: pxToRem(65px);
     padding-bottom: pxToRem(15px);
     padding-#{$start-direction}: pxToRem(8px);
@@ -147,16 +147,16 @@ $testimonials-img-height: 105px;
     .clients-testimonials__avatar {
         width: pxToRem($testimonials-img-height);
         height: pxToRem($testimonials-img-height);
-        border-radius: pxToRem($testimonials-img-height / 2);
+        border-radius: pxToRem($testimonials-img-height * 0.5);
         padding: pxToRem(20px);
-        top: -#{pxToRem($testimonials-img-height / 2)};
+        top: -#{pxToRem($testimonials-img-height * 0.5)};
         #{$end-direction}: 0;
         transform: none;
     }
 
     .clients-testimonials__content,
     .clients-testimonials__footer {
-        margin-#{$end-direction}: pxToRem($testimonials-img-height / 2);
+        margin-#{$end-direction}: pxToRem($testimonials-img-height * 0.5);
     }
 
     .clients-logos {

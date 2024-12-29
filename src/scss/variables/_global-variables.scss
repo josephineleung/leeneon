@@ -1,4 +1,6 @@
 // Root
+@use "sass:math";
+
 $root-font-size: 16px;
 
 // Transition
@@ -15,10 +17,10 @@ $line-height: 2px;
 
 // Breakpoints
 $breakpoint-xs: 0;
-$breakpoint-sm: #{576px / $root-font-size}rem;
-$breakpoint-md: #{768px / $root-font-size}rem;
-$breakpoint-lg: #{992px / $root-font-size}rem;
-$breakpoint-xl: #{1200px / $root-font-size}rem;
+$breakpoint-sm: #{math.div(576px, $root-font-size)}rem;
+$breakpoint-md: #{math.div(768px, $root-font-size)}rem;
+$breakpoint-lg: #{math.div(992px, $root-font-size)}rem;
+$breakpoint-xl: #{math.div(1200px, $root-font-size)}rem;
 
 $breakpoints: (
     xs: $breakpoint-xs,
@@ -29,7 +31,7 @@ $breakpoints: (
 );
 
 // Border
-$border-radius: #{2px / $root-font-size}rem;
+$border-radius: #{math.div(2px, $root-font-size)}rem;
 
 // Grid
 $grid-column-gap: 30px;

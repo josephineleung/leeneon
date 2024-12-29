@@ -1,3 +1,5 @@
+@use "sass:math";
+
 @mixin theme-transition() {
     transition: color $transition-duration $transition-time-function,
         background-color $transition-duration $transition-time-function,
@@ -95,7 +97,7 @@
 }
 
 @function pxToRem($px) {
-    $result: ($px / $root-font-size);
+    $result: math.div($px, $root-font-size);
     
     @return #{$result}rem; 
 }
